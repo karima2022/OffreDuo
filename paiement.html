@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2, minimum-scale=1.0"
+          name="viewport">
+    <meta content="Découvrez notre large sélection d'éponges de maquillage [Beauty Blender](https://www.google.com/search?q=Beauty%20Blender). Obtenez un teint parfait et sans défaut avec nos éponges de haute qualité. Livraison rapide et gratuite. Commandez dès maintenant !"
+          name="description">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/css/uikit.min.css" rel="stylesheet"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+
+                        <li>
+                            <a href="#"><img alt="icone menu" src="img/menu.svg"></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="panier.html">Panier</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <p>Eponge Merveille</p>
+                </div>
+
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="panierSolo.html">Panier</a></li>
+                        <li class="uk-active">
+                            <a href="paiement.html">Paiement</a>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <div class="card">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img alt="duo d eponge a maquillage" src="img/nude-beauty-blender-picture-for-navbar.webp"
+                         uk-cover>
+                    <canvas height="300" width="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <form class="uk-form-stacked" id="payment-form">
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="name">Nom complet</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="name" placeholder="Votre nom complet..." type="text">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="address">Adresse de livraison</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="address" placeholder="Votre adresse de livraison..."
+                                           type="text">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="phone">Numéro de téléphone</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="phone" placeholder="Votre numéro de téléphone..."
+                                           type="tel">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="payment-method">Méthode de paiement</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="payment-method" name="payment-method">
+                                        <option disabled selected value="">Choisissez une méthode de paiement</option>
+                                        <option value="Carte de crédit">Carte de crédit</option>
+                                        <option value="PayPal">PayPal</option>
+                                        <option value="Virement bancaire">Virement bancaire</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="uk-margin" id="payment-details" style="display: none;">
+                                <label class="uk-form-label" for="credit-card-number">Numéro de carte de crédit</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="credit-card-number"
+                                           placeholder="Numéro de carte de crédit" type="text">
+                                </div>
+                            </div>
+
+                            <div class="uk-margin" id="expiration-date" style="display: none;">
+                                <label class="uk-form-label" for="expiry">Date d'expiration</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="expiry" placeholder="MM/AA" type="text">
+                                </div>
+                            </div>
+
+
+                            <div class="uk-margin">
+                                <div class="uk-form-label">Options de livraison</div>
+                                <div class="uk-form-controls">
+                                    <label><input class="uk-radio" name="delivery-option" type="radio" value="standard">
+                                        Livraison
+                                        standard</label><br>
+                                    <label><input class="uk-radio" name="delivery-option" type="radio" value="express">
+                                        Livraison
+                                        point relais</label>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="comments">Commentaires supplémentaires</label>
+                                <div class="uk-form-controls">
+                    <textarea class="uk-textarea" id="comments"
+                              placeholder="Ajoutez des commentaires supplémentaires ici..."
+                              rows="4"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <button class="add-to-cart" type="submit">
+                                    CONFIRMER LE PAIEMENT
+                                    <span uk-icon="credit-card"></span>
+                                </button>
+
+                            </div>
+
+                        </form>
+                        <div class="uk-alert-success" id="success-message" style="display: none;">
+                            <a class="uk-alert-close" href uk-close></a>
+                            <p>Merci pour votre commande votre paiement est validé</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const paymentDetails = document.getElementById('payment-details');
+        const expirationDate = document.getElementById('expiration-date');
+
+        paymentMethodSelect.addEventListener('change', function () {
+            if (paymentMethodSelect.value === 'Carte de crédit') {
+                paymentDetails.style.display = 'block';
+                expirationDate.style.display = 'block';
+            } else {
+                paymentDetails.style.display = 'none';
+                expirationDate.style.display = 'none';
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const paymentMethodSelect = document.getElementById('payment-method');
+
+        paymentMethodSelect.addEventListener('change', function () {
+            if (paymentMethodSelect.value === 'PayPal') {
+
+                window.location.href = 'https://www.paypal.com';
+            }
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const paymentForm = document.getElementById('payment-form');
+        const successMessage = document.getElementById('success-message');
+
+        paymentForm.addEventListener('submit', function (event) {
+            // Empêcher l'envoi du formulaire par défaut
+            event.preventDefault();
+
+// Masquer le formulaire
+            paymentForm.style.display = 'none';
+
+            // Afficher le message de succès
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
+
+</body>
+</html>

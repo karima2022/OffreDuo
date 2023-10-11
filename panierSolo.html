@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2, minimum-scale=1.0"
+          name="viewport">
+    <meta content="Découvrez notre large sélection d'éponges de maquillage [Beauty Blender](https://www.google.com/search?q=Beauty%20Blender). Obtenez un teint parfait et sans défaut avec nos éponges de haute qualité. Livraison rapide et gratuite. Commandez dès maintenant !"
+          name="description">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/css/uikit.min.css" rel="stylesheet"/>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+
+                        <li>
+                            <a href="#"><img alt="icone menu" src="img/menu.svg"></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="panier.html">Panier</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+
+
+                    <p>Eponge Merveille</p>
+                </div>
+
+
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html">home</a></li>
+                        <li class="uk-active"><a href="panierSolo.html">Panier</a></li>
+                        <li>
+                            <a href="paiement.html">Paiement</a>
+
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <div><h1>Panier</h1></div>
+        <div class="card">
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img alt="duo d eponge a maquillage" src="img/mains-tenant-eponge-maquillage-lumineuse.webp"
+                        >
+                    <canvas height="300" width="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h2 class="uk-card-title">OFFRE SOLO </h2>
+
+                        <p>Livraison offerte</p>
+                        <p class="price">Total: $7.60</p>
+                        <h3>Offre duo</h3>
+                        <p>La deuxième éponge de qualité luxe pour 1$ de plus</p>
+
+                        <a href="paiement.html">
+                            <button class="add-to-cart">
+                                VALIDER LE PAIEMENT
+                                <span uk-icon="credit-card"></span>
+                            </button>
+                        </a>
+                        <a href="panier.html">
+                            <button class="add-to-cart">
+                                OFFRE DUO
+                                <span uk-icon="cart"></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: black;
+    background-size: cover;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1{
+    text-align: center;
+    margin: 5%;
+    font-weight: bold;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 22px;
+
+}
+
+h4{
+    font-size: 20px;
+}
+
+p, dt, dd{
+    font-size: 16px;
+}
+.uk-container p{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.uk-icon>* {
+    transform: translate(0,0);
+
+}
+.uk-navbar-dropdown-nav>li>a {
+    color: black;
+    font-size: 16px;
+}
+
+.uk-navbar-dropdown {
+    --uk-position-offset: -20px;
+    --uk-position-shift-offset: 0;
+    --uk-position-viewport-offset: 15px;
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    color: #666;
+    box-shadow: 0 5px 12px rgba(0,0,0,.15);
+}
+ .card {
+        /* Définir la largeur de la carte ici (par exemple, 300px) */
+        width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+    }
+
+
+
+.uk-margin{
+    margin-bottom: 30px;
+}
+
+.uk-card-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.uk-card-body p{
+    font-size: 20px;
+}
+
+.uk-card-body h3{
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.prixInitial {
+    font-size: 18px;
+    color: red;
+    text-decoration: line-through;
+}
+
+
+.price {
+    font-size: 24px;
+    color: green;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+.material-icons {
+    font-size: 24px;
+    margin-left: 5px;
+}
+
+
+.youtube {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.uk-description-list-divider>dt:nth-child(n+2) {
+    margin-top: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #e5e5e5;}
+
+
+.uk-section {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+element.style {
+    background-color: white;
+}
+.uk-card-primary.uk-card-body, .uk-card-primary>:not([class*=uk-card-media]), .uk-card-secondary.uk-card-body, .uk-card-secondary>:not([class*=uk-card-media]), .uk-light, .uk-offcanvas-bar, .uk-overlay-primary, .uk-section-primary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) {
+    color: black;
+}
+
+.uk-card-primary.uk-card-body .uk-navbar-nav>li.uk-active>a, .uk-card-primary>:not([class*=uk-card-media]) .uk-navbar-nav>li.uk-active>a, .uk-card-secondary.uk-card-body .uk-navbar-nav>li.uk-active>a, .uk-card-secondary>:not([class*=uk-card-media]) .uk-navbar-nav>li.uk-active>a, .uk-light .uk-navbar-nav>li.uk-active>a, .uk-offcanvas-bar .uk-navbar-nav>li.uk-active>a, .uk-overlay-primary .uk-navbar-nav>li.uk-active>a, .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav>li.uk-active>a, .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav>li.uk-active>a, .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav>li.uk-active>a, .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav>li.uk-active>a {
+    color: black;
+}
+.uk-card-primary.uk-card-body .uk-navbar-nav>li>a, .uk-card-primary>:not([class*=uk-card-media]) .uk-navbar-nav>li>a, .uk-card-secondary.uk-card-body .uk-navbar-nav>li>a, .uk-card-secondary>:not([class*=uk-card-media]) .uk-navbar-nav>li>a, .uk-light .uk-navbar-nav>li>a, .uk-offcanvas-bar .uk-navbar-nav>li>a, .uk-overlay-primary .uk-navbar-nav>li>a, .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav>li>a {
+    color: black;
+}
+
+
+.uk-navbar-nav>li>a {
+
+    font-size: 16px;
+}
+
+.uk-alert {
+    padding: -8px 29px 15px 15px;
+}
